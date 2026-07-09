@@ -1,0 +1,19 @@
+GitHub APK 빌드 업로드 체크리스트
+
+1. ZIP 압축을 푼다.
+2. 저장소 Code 화면에서 Add file → Upload files.
+3. 아래 항목들이 저장소 최상단에 오도록 업로드한다.
+   - .github
+   - app
+   - README.md
+   - build.gradle
+   - settings.gradle
+4. Commit changes를 누른다.
+5. 저장소 첫 화면에서 .github 폴더가 보이는지 확인한다.
+6. .github/workflows/android.yml 파일이 있는지 확인한다.
+7. Actions 탭으로 이동한다.
+8. 왼쪽 메뉴에 Build Android APK가 보이면 정상이다.
+9. Build Android APK → Run workflow를 눌러 APK를 빌드한다.
+
+.github가 안 올라가면:
+Code → Add file → Create new file → 파일명에 .github/workflows/android.yml 입력 → GITHUB_ACTIONS_ANDROID_YML_COPY.txt 내용을 붙여넣고 Commit changes.
